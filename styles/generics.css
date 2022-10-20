@@ -1,1 +1,15 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+.visually-hidden {
+  position: absolute;
+  left: -999999px;
+}
+
+a:hover {
+  color: #fa9c25;
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 1px solid #fa9c25;
+}

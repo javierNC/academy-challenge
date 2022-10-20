@@ -40,16 +40,18 @@
     wait(1000);
     antiflicker();
   </script>
-  <title>Get Your &lt;head&gt; Straight</title>
+  <title>Get Your head Straight</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
 </head>
 <body>
-  <header>
-    <a class="logo" href="#">
+  <header aria-labelledby="headerHeadline">
+    <h2 id="headerHeadline" class="visually-hidden">Page Header</h2>
+    <a class="logo" href="#" alt="Logo image">
       <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           style=" fill:#000000;"
-          width="80" height="60">
+          width="80" height="60"
+          aria-hidden="true">
           <metadata>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                     xmlns:connect="http://www.w3.org/1999/08/29-svg-connections-in-RDF#">
@@ -128,9 +130,10 @@
         </svg>
     </a>
     <nav class="navigation" aria-label="main navigation">
+      <h3 class="visually-hidden" id="pageNavigationHeadline">Page Navigation</h3>
       <ul class="navigation__list" role="menubar">
         <li class="navigation__item" role="none">
-          <a class="navigation__link" href="#" role="menuitem">
+          <a class="navigation__link" href="https://www.google.es" target="_blank" role="menuitem">
             Articles
           </a>
         </li>
@@ -149,28 +152,29 @@
   </header>
 
   <main>
-    <section class="hero">
-      <img data-src="banner.png" alt="" class="hero__img">
-    </section>
+    <banner aria-labelledby="pageTitleHeadline">
+      <h1 class="visually-hidden" id="pageTitleHeadline">Get Your &#60;head&gt; Straight</h1>
+      <img data-src="banner.png" alt="A nice picture of Los Angeles from the Griffith Observatory" title="Los Angeles taken from the Griffith Observatory" class="hero__img">
+    </banner>
     <script src="script/hero.js"></script>
 
     <section class="gridbox">
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
@@ -180,58 +184,58 @@
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article><article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
       <article class="gridbox__item">
         <section class="card">
-          <img data-src="image-tree.jpg" alt="" class="card__img">
-          <hr>
+          <img data-src="image-tree.jpg" alt="A picture of many colorful leaves covering the ground" title="Colorful leaves covering the ground" class="card__img">
+          <hr aria-hidden="true">
         </section>
       </article>
     </section>
